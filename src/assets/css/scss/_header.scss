@@ -1,0 +1,78 @@
+header {
+  box-sizing: border-box;
+  padding: $rem-xs;
+  color: $color-font-light;
+  background-color: $background-color;
+
+  .centerer {
+    @include flex-box;
+
+    .title {
+      @include flex-line-center;
+      width: 40%;
+
+      img {
+        width: 28px;
+      }
+
+      h1 {
+        margin: 0 $rem-xs;
+        font-size: $rem-title-phone;
+        font-family: $font-family-title;
+      }
+
+      @include media-between($phone-d, $desktop-d) {
+        img {
+          width: 48px;
+        }
+
+        h1 {
+          margin: 0 $rem-m;
+          font-size: $rem-title-tablet;
+        }
+      }
+
+      @include media-min($desktop-d) {
+        img {
+          width: 54px;
+        }
+
+        h1 {
+          margin: 0 $rem-l;
+          font-size: $rem-title-desktop;
+        }
+      }
+    }
+
+    .user-login {
+      .icoLog {
+        margin-left: $rem-xs;
+        font-weight: 100;
+      }
+    }
+  }
+}
+
+#clock {
+  padding: $rem-xxs 0;
+  text-transform: capitalize;
+  color: $color-font-color;
+  background-color: rgba (252, 252, 252, 0.8);
+
+  @include media-min($tablet-u) {
+    display: none;
+  }
+}
+
+.nav {
+  @include flex-line-center;
+  padding: $rem-border-l;
+  color: $color-font-light;
+  background-color: $background-color;
+
+  .link {}
+
+  .router-link-exact-active {
+    color: $color-font-error;
+  }
+}

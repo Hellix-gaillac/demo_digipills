@@ -1,0 +1,36 @@
+.edition {
+  .recherche {
+    .search {
+      width: 80%;
+      max-width: 400px;
+      margin: 10px auto;
+      @include flex-line-center;
+      @include border-color;
+
+      input {
+        width: 90%;
+        padding: $rem-xs;
+        font-size: $rem-l;
+        border: none;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      button {
+        display: block;
+        width: 15%;
+        padding: $rem-s;
+        display: block;
+        border: 3px solid $background-color;
+        background-color: $background-color;
+
+        i {
+          font-size: $rem-l;
+          color: $color-font-light;
+        }
+      }
+    }
+  }
+}

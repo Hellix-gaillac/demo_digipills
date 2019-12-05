@@ -1,0 +1,84 @@
+//thème-color green :#0097a7 rgba(0, 151, 167, 1)
+$green: #0097a7; //rgb(56,168,105)
+$red: #f02337; //(224,64,80)
+$dark: #131313; //rgb (19, 19, 19)
+$dark-light: #777777;
+$grey: #ededed; //rgb (22, 24, 27)
+$white: #fcfcfc; //rgb (252,252,252)
+/*-------------*/
+$color-font-light: $white;
+$color-font-dark: $dark;
+$color-font-dark-light: $dark-light;
+
+$color-font-error: $red;
+$color-font-color: $green;
+$background-color-light: $white;
+$background-color-grey: $grey;
+$background-color: $green;
+/*-------------Width----------------*/
+$width-centerer:85%;
+/*-------------FONT----------------*/
+$font-family-title: 'Aleo',
+"serif";
+$font-family-content: "Roboto",
+"Arial",
+"sans-serif";
+$font-family-special:'Roboto Mono',
+'monospace';
+
+$font-weight-xl: 700;
+$font-weight-l: 500;
+$font-weight-m: 300;
+$font-weight-s: 100;
+/*------------REM-SIZE-----------*/
+$font-ref-desktop:18px;
+$font-ref-tablet:16px;
+$font-ref-phone:12px;
+
+$rem-title-desktop: 3rem;
+$rem-sutitle-desktop: 2rem;
+$rem-title-tablet: 2rem;
+$rem-sutitle-tablet: 1.5rem;
+$rem-title-phone: 1.5rem;
+$rem-sutitle-phone: 1.2rem;
+
+$rem-xl:1.5rem;
+$rem-l: 1.3rem;
+$rem-m: 1rem;
+$rem-s: 0.8rem;
+$rem-xs: 0.5rem;
+$rem-xxs:0.3rem;
+$rem-border-l:0.2rem;
+$rem-border-m:0.1rem;
+$rem-border-s:0.06rem;
+/*--------------Align-------------*/
+$text-center: center;
+$text-right: right;
+$text-left: left;
+/*--------------BORDER-------------*/
+$border-g-s: 1px solid $green;
+$border-g-m: 2px solid $green;
+$border-w-s: 1px solid $white;
+$border-w-m: 2px solid $white;
+/*------------BREACKPOINT----------*/
+$breakpoints: ("phone-down": 500px,
+  "tablet-up": 767px,
+  "tablet-down": 900px,
+  "desktop-up": 1024px,
+  "desktop-down": 1280px,
+  "widescreen-up": 1440px);
+$phone-d:"phone-down";
+$tablet-u:"tablet-down";
+$tablet-d:"tablet-down";
+$desktop-u:"desktop-up";
+$desktop-d:"desktop-down";
+$widescreen-u:"widescreen-up";
+
+/*---------SCREEN-EXPRESSION-------*/
+$media-screen: 'screen';
+$media-print: 'print';
+$media-handheld: 'handheld';
+$media-landscape: 'landscape';
+$media-portrait: 'portrait';
+$media-retina2x: 'retina2x';
+$media-retina3x: 'retina3x';

@@ -1,0 +1,126 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="514" height="424" view_box="0 0 514 424"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:link="http://www.w3.org/1999/xlink">\n\n<desc>Généré par Mocodo 2.3.7 le Fri, 07 Jun 2019 06:21:31</desc>
+
+<rect id="frame" x="0" y="0" width="514" height="424" fill="#f5f5f5" stroke="none" stroke-width="0"/>
+
+<!-- Association medicament_ordonnance -->
+<line x1="59" y1="238" x2="225" y2="238" stroke="#bf812d" stroke-width="2"/>
+<text x="114" y="255.0" fill="#01665e" font-family="Verdana" font-size="12">1,N</text>
+<line x1="422" y1="238" x2="225" y2="238" stroke="#bf812d" stroke-width="2"/>
+<text x="314" y="255.0" fill="#01665e" font-family="Verdana" font-size="12">1,N</text>
+<g id="association-medicament_ordonnance">
+	<path d="M 295 170 a 14 14 90 0 1 14 14 V 195 h -168 V 184 a 14 14 90 0 1 14 -14" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+	<path d="M 309 195.0 v 97 a 14 14 90 0 1 -14 14 H 155 a 14 14 90 0 1 -14 -14 V 195.0 H 168" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+	<rect x="141" y="170" width="168" height="136" fill="none" rx="14" stroke="#bf812d" stroke-width="2"/>
+	<line x1="141" y1="195" x2="309" y2="195" stroke="#bf812d" stroke-width="1"/>
+	<text x="148" y="187.7" fill="#000000" font-family="Verdana" font-size="12">medicament_ordonnance</text>
+	<text x="148" y="212.7" fill="#000000" font-family="Verdana" font-size="12">id_medoc_ordo</text>
+	<text x="148" y="229.7" fill="#000000" font-family="Verdana" font-size="12">dose_matin</text>
+	<text x="148" y="246.8" fill="#000000" font-family="Verdana" font-size="12">dose_midi</text>
+	<text x="148" y="263.8" fill="#000000" font-family="Verdana" font-size="12">dose_soir</text>
+	<text x="148" y="280.8" fill="#000000" font-family="Verdana" font-size="12">dose_nuit</text>
+	<text x="148" y="297.8" fill="#000000" font-family="Verdana" font-size="12">date_fin</text>
+</g>
+
+<!-- Association medicament_occasionnel -->
+<line x1="225" y1="77" x2="422" y2="77" stroke="#bf812d" stroke-width="2"/>
+<text x="259" y="94.0" fill="#01665e" font-family="Verdana" font-size="12">1,N</text>
+<line x1="422" y1="238" x2="422" y2="77" stroke="#bf812d" stroke-width="2"/>
+<text x="427.0" y="145" fill="#01665e" font-family="Verdana" font-size="12">1,N</text>
+<g id="association-medicament_occasionnel">
+	<path d="M 491 26 a 14 14 90 0 1 14 14 V 51 h -166 V 40 a 14 14 90 0 1 14 -14" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+	<path d="M 505 51.0 v 63 a 14 14 90 0 1 -14 14 H 353 a 14 14 90 0 1 -14 -14 V 51.0 H 166" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+	<rect x="339" y="26" width="166" height="102" fill="none" rx="14" stroke="#bf812d" stroke-width="2"/>
+	<line x1="339" y1="51" x2="505" y2="51" stroke="#bf812d" stroke-width="1"/>
+	<text x="346" y="43.7" fill="#000000" font-family="Verdana" font-size="12">medicament_occasionnel</text>
+	<text x="346" y="68.7" fill="#000000" font-family="Verdana" font-size="12">id_medoc_occas</text>
+	<text x="346" y="85.8" fill="#000000" font-family="Verdana" font-size="12">dose</text>
+	<text x="346" y="102.8" fill="#000000" font-family="Verdana" font-size="12">frequence_prise</text>
+	<text x="346" y="119.8" fill="#000000" font-family="Verdana" font-size="12">date_der_prise</text>
+</g>
+
+<!-- Association utilise -->
+<line x1="225" y1="77" x2="59" y2="77" stroke="#bf812d" stroke-width="2"/>
+<text x="169" y="94.0" fill="#01665e" font-family="Verdana" font-size="12">1,N</text>
+<line x1="59" y1="238" x2="59" y2="77" stroke="#bf812d" stroke-width="2"/>
+<text x="64.0" y="196" fill="#01665e" font-family="Verdana" font-size="12">1,1</text>
+<g id="association-utilise">
+	<path d="M 71 52 a 14 14 90 0 1 14 14 V 77 h -52 V 66 a 14 14 90 0 1 14 -14" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+	<path d="M 85 77.0 v 11 a 14 14 90 0 1 -14 14 H 47 a 14 14 90 0 1 -14 -14 V 77.0 H 52" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+	<rect x="33" y="52" width="52" height="50" fill="none" rx="14" stroke="#bf812d" stroke-width="2"/>
+	<line x1="33" y1="77" x2="85" y2="77" stroke="#bf812d" stroke-width="1"/>
+	<text x="40" y="69.7" fill="#000000" font-family="Verdana" font-size="12">utilise</text>
+</g>
+
+<!-- Entity session -->
+<g id="entity-session">
+	<g id="frame-session">
+		<rect x="191" y="331" width="68" height="25" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+		<rect x="191" y="356.0" width="68" height="59" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+		<rect x="191" y="331" width="68" height="84" fill="none" stroke="#35978f" stroke-width="2"/>
+		<line x1="191" y1="356" x2="259" y2="356" stroke="#35978f" stroke-width="1"/>
+	</g>
+	<text x="202" y="348.7" fill="#000000" font-family="Verdana" font-size="12">session</text>
+	<text x="196" y="373.8" fill="#000000" font-family="Verdana" font-size="12">sid</text>
+	<line x1="196" y1="376" x2="214" y2="376" stroke="#000000" stroke-width="1"/>
+	<text x="196" y="390.8" fill="#000000" font-family="Verdana" font-size="12">data</text>
+	<text x="196" y="407.8" fill="#000000" font-family="Verdana" font-size="12">date_maj</text>
+</g>
+
+<!-- Entity ordonnance -->
+<g id="entity-ordonnance">
+	<g id="frame-ordonnance">
+		<rect x="9" y="204" width="100" height="25" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+		<rect x="9" y="229.0" width="100" height="43" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+		<rect x="9" y="204" width="100" height="68" fill="none" stroke="#35978f" stroke-width="2"/>
+		<line x1="9" y1="229" x2="109" y2="229" stroke="#35978f" stroke-width="1"/>
+	</g>
+	<text x="23" y="221.7" fill="#000000" font-family="Verdana" font-size="12">ordonnance</text>
+	<text x="14" y="246.8" fill="#000000" font-family="Verdana" font-size="12">id_ordonnance</text>
+	<line x1="14" y1="249" x2="104" y2="249" stroke="#000000" stroke-width="1"/>
+	<text x="14" y="263.8" fill="#000000" font-family="Verdana" font-size="12">date_fin</text>
+</g>
+
+<!-- Entity medicament_API -->
+<g id="entity-medicament_API">
+	<g id="frame-medicament_API">
+		<rect x="341" y="153" width="162" height="25" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+		<rect x="341" y="178.0" width="162" height="145" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+		<rect x="341" y="153" width="162" height="170" fill="none" stroke="#35978f" stroke-width="2"/>
+		<line x1="341" y1="178" x2="503" y2="178" stroke="#35978f" stroke-width="1"/>
+	</g>
+	<text x="370" y="170.7" fill="#000000" font-family="Verdana" font-size="12">medicament_API</text>
+	<text x="346" y="195.7" fill="#000000" font-family="Verdana" font-size="12">id_medoc_API</text>
+	<line x1="346" y1="198" x2="433" y2="198" stroke="#000000" stroke-width="1"/>
+	<text x="346" y="212.7" fill="#000000" font-family="Verdana" font-size="12">code_cis</text>
+	<text x="346" y="229.7" fill="#000000" font-family="Verdana" font-size="12">denomination</text>
+	<text x="346" y="246.8" fill="#000000" font-family="Verdana" font-size="12">forme_pharmaceutique</text>
+	<text x="346" y="263.8" fill="#000000" font-family="Verdana" font-size="12">voie_administration</text>
+	<text x="346" y="280.8" fill="#000000" font-family="Verdana" font-size="12">indication_therapeutique</text>
+	<text x="346" y="297.8" fill="#000000" font-family="Verdana" font-size="12">substance</text>
+	<text x="346" y="314.8" fill="#000000" font-family="Verdana" font-size="12">dosage_substance</text>
+</g>
+
+<!-- Entity user -->
+<g id="entity-user">
+	<g id="frame-user">
+		<rect x="196" y="9" width="58" height="25" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+		<rect x="196" y="34.0" width="58" height="111" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+		<rect x="196" y="9" width="58" height="136" fill="none" stroke="#35978f" stroke-width="2"/>
+		<line x1="196" y1="34" x2="254" y2="34" stroke="#35978f" stroke-width="1"/>
+	</g>
+	<text x="211" y="26.7" fill="#000000" font-family="Verdana" font-size="12">user</text>
+	<text x="201" y="51.7" fill="#000000" font-family="Verdana" font-size="12">id_user</text>
+	<line x1="201" y1="54" x2="247" y2="54" stroke="#000000" stroke-width="1"/>
+	<text x="201" y="68.7" fill="#000000" font-family="Verdana" font-size="12">log</text>
+	<text x="201" y="85.8" fill="#000000" font-family="Verdana" font-size="12">mdp</text>
+	<text x="201" y="102.8" fill="#000000" font-family="Verdana" font-size="12">nom</text>
+	<text x="201" y="119.8" fill="#000000" font-family="Verdana" font-size="12">prenom</text>
+	<text x="201" y="136.8" fill="#000000" font-family="Verdana" font-size="12">email</text>
+</g>
+</svg>

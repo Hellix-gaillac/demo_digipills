@@ -1,0 +1,5 @@
+INSERT INTO `categorie` (`id_categorie`, `nom`) VALUES
+(1, 'Alpinisme'),
+(2, 'Randonnée'),
+(3, 'Escalade');
+

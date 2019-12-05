@@ -1,0 +1,34 @@
+nav {
+  @include flex-line-center;
+  z-index: 9999;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: $color-font-light;
+  background-color: $background-color;
+
+  .case {
+    width: 25%;
+    height: 60px;
+    padding-top: 10px;
+    border-right: 1px solid $color-font-light;
+
+    &:last-child {
+      border-right: none;
+    }
+
+  }
+
+  @include media-between($phone-d, $tablet-u) {}
+
+  @include media-min($tablet-u) {
+    bottom: 20px;
+
+
+    .case {
+      border-bottom: 1px solid $color-font-light;
+      max-width: 500px;
+    }
+  }
+
+}

@@ -1,0 +1,10 @@
+.animation-enter-active,
+.animation-leave-active {
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+.animation-enter,
+.animation-leave-active {
+    opacity: 0;
+    transform: translateY(-15px);
+}

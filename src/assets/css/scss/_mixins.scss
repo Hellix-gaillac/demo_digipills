@@ -1,0 +1,117 @@
+//-------------------BORDER-----------------//
+@mixin border-test {
+  border: $rem-border-s solid black !important;
+}
+
+@mixin border-color {
+  border: 1px solid $background-color !important;
+  border-radius: 1px;
+}
+
+@mixin border-light {
+  border: 1px solid $background-color-light !important;
+  border-radius: 1px;
+}
+
+//-------------------FLEXBOX-----------------//
+@mixin flex-box {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@mixin flex-line-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+@mixin flex-line-evenly {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: space-evenly;
+}
+
+@mixin flex-line-between {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+//-------------------CENTERER-----------------//
+@mixin center-phone {
+  width: 95%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@mixin center-min-tablet {
+  width: 85%;
+  max-width: map-get($breakpoints, $desktop-d);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+//------------MEDIA-QUERIES -----------------//
+/* from... */
+@mixin media-min($_key) {
+  @media screen and (min-width: map-get($breakpoints, $_key)) {
+    & {
+      @content;
+    }
+  }
+}
+
+/* to... */
+@mixin media-max($_key) {
+  @media screen and (max-width: map-get($breakpoints, $_key) - 1) {
+    & {
+      @content;
+    }
+  }
+}
+
+/* from... to... */
+@mixin media-between($_keymin, $_keymax) {
+  @media screen and (min-width: map-get($breakpoints, $_keymin)) and (max-width: map-get($breakpoints, $_keymax) - 1) {
+    & {
+      @content;
+    }
+  }
+}
+
+/* at... */
+@mixin media($_key) {
+  @media screen and (min-width: map-get($breakpoints, $_key)) and (max-width: map-get($breakpoints, nth(map-keys($breakpoints), index(map-keys($breakpoints), $_key) + 1)) - 1) {
+    & {
+      @content;
+    }
+  }
+}
+
+/*-------------------USE-QUERY--------------------*/
+//@include media-min("desktop-up") {
+//  /* from 1024px to infinite */
+//}
+
+//@include media-max("tablet-down") {
+//  /* from 0px to 899px */
+//}
+
+//@include media-between("tablet-up", "desktop-down") {
+//  /* from 768px to 1279px */
+//}
+
+//@include media("tablet-down") {
+//  /* from 900px to 1023px */
+//}

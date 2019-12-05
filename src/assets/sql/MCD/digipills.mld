@@ -1,0 +1,20 @@
+%%mocodo
+:::
+user: id_user, log, mdp, nom, prenom, email
+:
+medicament_occasionnel: #id_user->user->id_user, _#id_medoc_API->medicament_API->id_medoc_API, id_medoc_occas, dose, frequence_prise, date_der_prise
+:
+
+
+:
+ordonnance: id_ordonnance, date_fin, #id_user->user->id_user
+:
+medicament_ordonnance: #id_ordonnance->ordonnance->id_ordonnance, _#id_medoc_API->medicament_API->id_medoc_API, id_medoc_ordo, dose_matin, dose_midi, dose_soir, dose_nuit, date_fin
+:
+medicament_API: id_medoc_API, code_cis, denomination, forme_pharmaceutique, voie_administration, indication_therapeutique, substance, dosage_substance
+:
+
+
+:::
+session: sid, data, date_maj
+:::

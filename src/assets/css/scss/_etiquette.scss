@@ -1,0 +1,96 @@
+.liste-prises {
+  width: 90%;
+  max-width: 800px;
+  margin: $rem-s auto;
+  line-height: $rem-m;
+
+  .prise {
+    margin-bottom: $rem-xs;
+    background-color: $grey;
+    border-radius: 5px;
+
+    .contenair {
+      @include border-light;
+      @include flex-line-between;
+
+      .content {
+        box-sizing: border-box;
+        width: 85%;
+        margin: $rem-xxs;
+        padding: $rem-xxs;
+        text-align: left;
+        color: $color-font-dark;
+        border-right: 1px solid $color-font-light;
+        font-family: $font-family-special;
+
+        .dosage-regu,
+        .dosage-occas,
+        .ecart-prise {
+          margin-top: $rem-xxs;
+        }
+      }
+
+      .button-notice {
+        width: 15%;
+        max-width: 150px;
+        margin: auto 0;
+        padding: $rem-s;
+      }
+    }
+
+    .detail {
+      @include flex-column;
+      color: $color-font-color;
+
+      .time {
+        @include flex-box;
+        margin: auto;
+        padding: $rem-xs;
+
+        .start-prise {
+          width: 100%;
+          margin: 3px 0;
+        }
+      }
+
+      .boucleDetail {
+        @include flex-column;
+
+        .detail-column {
+          padding: 3px;
+        }
+      }
+    }
+
+    .notice {
+      @include border-light;
+      padding: $rem-s;
+      text-align: left;
+      font-family: $font-family-content;
+      line-height: 20px;
+
+      i {
+        a {
+          color: $color-font-color;
+        }
+      }
+    }
+
+    .editer-supprimer {
+      @include flex-line-between;
+      margin: auto;
+      border-top: 1px solid $color-font-light;
+
+      .supprimer {
+        width: 50%;
+        padding: $rem-xxs;
+      }
+
+      .editer {
+        width: 50%;
+        padding: $rem-xxs;
+        border-left: 1px solid $color-font-light;
+      }
+    }
+  }
+}

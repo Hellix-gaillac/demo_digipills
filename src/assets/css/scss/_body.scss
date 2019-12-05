@@ -1,0 +1,39 @@
+body {
+  z-index: -1;
+  font-size: $font-ref-phone;
+  font-family: $font-family-content;
+  text-align: $text-center;
+  color: $color-font-dark;
+  background-color: $background-color-light;
+
+  @include media-between($phone-d, $desktop-d) {
+    font-size: $font-ref-tablet;
+
+  }
+
+  @include media-min($desktop-d) {
+    font-size: $font-ref-desktop;
+
+  }
+
+  main {
+    margin-bottom: 75px;
+
+    h1 {
+      @include border-color;
+    }
+
+    select {
+      min-height: 30px;
+      font-size: $rem-m;
+    }
+
+    @include media-min($tablet-d) {
+      margin-bottom: 105px;
+
+    }
+  }
+
+
+
+}

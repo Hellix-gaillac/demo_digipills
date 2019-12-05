@@ -1,0 +1,10 @@
+les prenoms et leurs id_medicaments reg
+SELECT u.prenom, pr.id_medicament FROM user u 
+JOIN prise_reguliere pr
+WHERE u.id_user=pr.id_user
+
+les prenoms et leurs id_medicaments occas
+SELECT user.prenom, prise_occasionnelle.id_medicament FROM user 
+JOIN prise_occasionnelle 
+WHERE user.id_user=prise_occasionnelle.id_user
+

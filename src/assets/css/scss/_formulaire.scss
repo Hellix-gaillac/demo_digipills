@@ -1,0 +1,106 @@
+.formulaire {
+  width: 90%;
+  margin: 10px auto;
+
+  .choix {
+    @include flex-line-between;
+    width: 90%;
+    max-width: 400px;
+    margin: 0px auto;
+
+    input {
+      border: none;
+      width: 50%;
+      padding: $rem-xs;
+      font-size: $rem-m;
+      border: 0.8px solid $background-color-grey;
+      color: $color-font-dark-light;
+      background-color: $background-color-light;
+      transition: 0.6s;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .active {
+      color: $color-font-dark;
+      background-color: $background-color-grey;
+    }
+  }
+
+  form {
+    width: 90%;
+    max-width: 400px;
+    margin: 0px auto;
+    padding: $rem-l;
+    box-sizing: border-box;
+    border-top: 1px solid $color-font-light;
+    background-color: $background-color-grey;
+
+    .item {
+      margin: $rem-xxs;
+      text-align: left;
+
+      label {
+        font-size: $rem-s;
+      }
+
+      select {
+        width: 100%;
+      }
+
+      input {
+        width: 100%;
+        margin: 10px auto;
+        font-size: $rem-m;
+        padding: $rem-xxs;
+        box-sizing: border-box;
+
+        &:focus {
+          border: 1px solid $color-font-color;
+        }
+
+      }
+    }
+  }
+
+  .item-bp {
+    @include flex-line-evenly;
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+
+    input {
+      border: none;
+      width: 40%;
+      margin: 0 $rem-s;
+      padding: $rem-xs;
+      font-size: $rem-m;
+      background-color: $background-color-grey;
+      transition: 0.4s;
+
+      &[type=button] {
+        color: $color-font-error;
+        border: 0.8px solid $color-font-error;
+      }
+
+      &[type=submit] {
+        color: $color-font-color;
+        border: 0.8px solid $color-font-color;
+      }
+
+      &:hover {
+        background-color: $background-color-light;
+      }
+    }
+  }
+
+  .supprimUser {
+    div {
+      width: 100%;
+      margin: 20px auto;
+      color: $color-font-error;
+    }
+  }
+}

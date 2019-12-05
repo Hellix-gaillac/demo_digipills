@@ -1,0 +1,9 @@
+utilise,1N user,11 ordonnance
+user: id_user[INT(10) UNSIGNED AUTO_INCREMENT NOT NULL],log[VARCHAR(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL],mdp[varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL],nom[varchar(50) NOT NULL],prenom[varchar(50) NOT NULL],email[varchar(50)]
+medicament_occasionnel,1N user, 1N medicament_API :id_medoc_occas[INT(10) UNSIGNED AUTO_INCREMENT NOT NULL],dose[DECIMAL(4,2)],frequence_prise[TIME],date_der_prise[DATETIME]
+
+ordonnance : id_ordonnance[INT(10) UNSIGNED AUTO_INCREMENT NOT NULL],date_fin[DATETIME]
+medicament_ordonnance,1N ordonnance, 1N medicament_API :id_medoc_ordo[INT(10) UNSIGNED AUTO_INCREMENT NOT NULL],dose_matin[DECIMAL(4,2)],dose_midi[DECIMAL(4,2)],dose_soir[DECIMAL(4,2)],dose_nuit[DECIMAL(4,2)],date_fin[DATETIME]
+medicament_API:id_medoc_API[INT(10) UNSIGNED AUTO_INCREMENT NOT NULL],code_cis[INT(8) NOT NULL],denomination[VARCHAR(50)],forme_pharmaceutique[VARCHAR(50)],voie_administration[VARCHAR(50)],indication_therapeutique[MEDIUMTEXT],substance[VARCHAR(50)],dosage_substance[VARCHAR(50)]
+
+session:sid[CHAR(32)],data[MEDIUMTEXT],date_maj[DATETIME]
